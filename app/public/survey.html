@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <title>Friend Finder</title>
 </head>
@@ -22,13 +24,13 @@
                 <label for="name">
                     <h4>Name (required)</h4>
                 </label>
-                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                <input type="name" class="form-control" id="name" placeholder="name">
             </div>
             <div class="form-group">
                 <label for="linktophoto">
                     <h4>Link to Photo (Required)</h4>
                 </label>
-                <input type="link" class="form-control" id="exampleFormControlInput1" placeholder="http://">
+                <input type="link" class="form-control" id="link" placeholder="http://">
             </div>
             <div class="form-group">
                 <label for="question1">
@@ -36,12 +38,12 @@
                     <h5>(Scale of 1-5, 1-Strongly Disagree and 5-Strongly agree)</h5>
                 </label>
                 <h4>I love dogs</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionOne">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -49,12 +51,12 @@
                     <h3>Question 2</h3>
                 </label>
                 <h4>I love Disney movies, they're not just for kids!</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionTwo">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -62,12 +64,12 @@
                     <h3>Question 3</h3>
                 </label>
                 <h4>I enjoy watching superhero movies.</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionThree">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -75,12 +77,12 @@
                     <h3>Question 4</h3>
                 </label>
                 <h4>I consider myself more introverted.</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionFour">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -88,12 +90,12 @@
                     <h3>Question 5</h3>
                 </label>
                 <h4>I prefer to plan activties in advance.</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionFive">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -101,12 +103,12 @@
                     <h3>Question 6</h3>
                 </label>
                 <h4>I love craft beer</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionSix">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -114,12 +116,12 @@
                     <h3>Question 7</h3>
                 </label>
                 <h4>I enjoy spending my free time bingewatching shows on Hulu and Netflix</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionSeven">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -127,12 +129,12 @@
                     <h3>Question 8</h3>
                 </label>
                 <h4>I like baseball</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionEight">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -140,12 +142,12 @@
                     <h3>Question 9</h3>
                 </label>
                 <h4>I like spending time outdoors</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionNine">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
             <div class="form-group">
@@ -153,37 +155,77 @@
                     <h3>Question 10</h3>
                 </label>
                 <h4>I love listening to all sorts of music</h4>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="form-control" id="questionTen">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
             </div>
         </form>
-
+        <button id="submit" type="submit" class="btn btn-info btn-lg" data-toggle="modal"
+            data-target="#exampleModal">Submit</button>
 
 
     </div>
 </body>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Your best match is:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript">
-// 1. Write click events for whatever the user clicks on, saved inside of object.
-function runFriendQuery() {
-    // 2. Then, use $.ajax to send POST request to /api/friends 
-    $.ajax({ url: "/api/friends", method: "GET" })
-    .then(function(friendsData) {
-        console.log(friendsData);
-        console.log("--------------------------------------------");
+    // 1. Write click events for whatever the user clicks on, saved inside of object.
+    var scores = [];
+    var modalMatch
 
-        // for (var i = 0; i < friendsData.length; i++) {
+    $(".form-control").change(function () {
+        if ($(this).val().length === 1) {
+            scores.push($(this).val())
+        }
 
-        // }
     })
-}
 
-// 3. Set the data field in the $.ajax equal to the object created in first step
+    $("#submit").on("click", function () {
+        var userData = {
+            name: $("#name").val(),
+            link: $("#link").val(),
+            scores: scores
 
-// 4. When user clicks submit, that triggers $.ajax sends a request to /api/friends
+        };
+        // 2. Then, use $.ajax to send POST request to /api/friends
+        $.ajax({ url: "/api/friends", method: "POST", data: userData })
+            .then(function (bestMatch) {
+                console.log(bestMatch);
+                console.log("--------------------------------------------");
+                $(".modal-body").text(bestMatch.name)
+
+
+            })
+    })
+
+
+
+// modal live demo from bootstrap - outside survey code, right above js tag
+
+// button at very bottom of div that holds survey
 </script>
+
 </html>
